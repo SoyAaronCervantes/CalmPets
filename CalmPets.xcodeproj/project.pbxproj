@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C83E7BDF9E32C0F8DF4A5126 /* Pods_CalmPets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A83A0C51B42A0ABD46AAABA /* Pods_CalmPets.framework */; };
 		DABD24D1267ADA890018A3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D0267ADA890018A3FC /* AppDelegate.swift */; };
 		DABD24D3267ADA890018A3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D2267ADA890018A3FC /* SceneDelegate.swift */; };
 		DABD24D5267ADA890018A3FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D4267ADA890018A3FC /* ContentView.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		368277DC047393F694982E8A /* Pods-CalmPets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalmPets.release.xcconfig"; path = "Target Support Files/Pods-CalmPets/Pods-CalmPets.release.xcconfig"; sourceTree = "<group>"; };
+		8A83A0C51B42A0ABD46AAABA /* Pods_CalmPets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalmPets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D27DECBCBC3E7000122E1488 /* Pods-CalmPets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalmPets.debug.xcconfig"; path = "Target Support Files/Pods-CalmPets/Pods-CalmPets.debug.xcconfig"; sourceTree = "<group>"; };
 		DABD24CD267ADA890018A3FC /* CalmPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalmPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD24D0267ADA890018A3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABD24D2267ADA890018A3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83E7BDF9E32C0F8DF4A5126 /* Pods_CalmPets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84319A7E73C63B9ECF6D6A44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8A83A0C51B42A0ABD46AAABA /* Pods_CalmPets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5D18949D88C6CE942B4C686 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D27DECBCBC3E7000122E1488 /* Pods-CalmPets.debug.xcconfig */,
+				368277DC047393F694982E8A /* Pods-CalmPets.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DABD24C4267ADA890018A3FC = {
 			isa = PBXGroup;
 			children = (
 				DABD24CF267ADA890018A3FC /* CalmPets */,
 				DABD24CE267ADA890018A3FC /* Products */,
+				C5D18949D88C6CE942B4C686 /* Pods */,
+				84319A7E73C63B9ECF6D6A44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DABD24E1267ADA8B0018A3FC /* Build configuration list for PBXNativeTarget "CalmPets" */;
 			buildPhases = (
+				D91A0A90AF14DD5F09FE5A69 /* [CP] Check Pods Manifest.lock */,
 				DABD24C9267ADA890018A3FC /* Sources */,
 				DABD24CA267ADA890018A3FC /* Frameworks */,
 				DABD24CB267ADA890018A3FC /* Resources */,
+				FAB9B4F2BB02FB0E42B790D1 /* [CP] Embed Pods Frameworks */,
+				DD2248C2403F43C4E30F4F6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +167,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D91A0A90AF14DD5F09FE5A69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CalmPets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2248C2403F43C4E30F4F6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB9B4F2BB02FB0E42B790D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CalmPets/Pods-CalmPets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DABD24C9267ADA890018A3FC /* Sources */ = {
@@ -283,6 +370,7 @@
 		};
 		DABD24E2267ADA8B0018A3FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D27DECBCBC3E7000122E1488 /* Pods-CalmPets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -304,6 +392,7 @@
 		};
 		DABD24E3267ADA8B0018A3FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 368277DC047393F694982E8A /* Pods-CalmPets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
