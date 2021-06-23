@@ -20,6 +20,7 @@ struct PetCard: View {
             Image( systemName: "tortoise.fill" )
                 .resizable()
                 .aspectRatio(contentMode: .fit)
+                .foregroundColor(.blue)
                 .frame(width: rect.width - 30, height: 300)
                 .cornerRadius(15)
             
