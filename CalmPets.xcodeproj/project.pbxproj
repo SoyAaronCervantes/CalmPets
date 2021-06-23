@@ -3,23 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C83E7BDF9E32C0F8DF4A5126 /* Pods_CalmPets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A83A0C51B42A0ABD46AAABA /* Pods_CalmPets.framework */; };
+		DA53B262267C2374001D8123 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA53B261267C2374001D8123 /* MainView.swift */; };
+		DA53B264267C6F85001D8123 /* PetFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA53B263267C6F85001D8123 /* PetFormView.swift */; };
+		DA53B266267C6FA3001D8123 /* AnimalsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA53B265267C6FA3001D8123 /* AnimalsEnum.swift */; };
+		DA53B269267C6FFE001D8123 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA53B267267C6FFE001D8123 /* CustomPickerView.swift */; };
+		DA53B26A267C6FFE001D8123 /* CustomTextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA53B268267C6FFE001D8123 /* CustomTextEditorView.swift */; };
 		DABD24D1267ADA890018A3FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D0267ADA890018A3FC /* AppDelegate.swift */; };
 		DABD24D3267ADA890018A3FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D2267ADA890018A3FC /* SceneDelegate.swift */; };
 		DABD24D5267ADA890018A3FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24D4267ADA890018A3FC /* ContentView.swift */; };
 		DABD24D7267ADA8A0018A3FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABD24D6267ADA8A0018A3FC /* Assets.xcassets */; };
 		DABD24DA267ADA8A0018A3FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABD24D9267ADA8A0018A3FC /* Preview Assets.xcassets */; };
 		DABD24DD267ADA8A0018A3FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DABD24DB267ADA8A0018A3FC /* LaunchScreen.storyboard */; };
+		DABD24E8267ADD330018A3FC /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24E7267ADD330018A3FC /* HomeView.swift */; };
+		DABD24EC267AE6090018A3FC /* GeneralPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24EB267AE6090018A3FC /* GeneralPetsView.swift */; };
+		DABD24EE267AE6200018A3FC /* UserPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24ED267AE6200018A3FC /* UserPetsView.swift */; };
+		DABD24F1267B09330018A3FC /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F0267B09330018A3FC /* TabBarButton.swift */; };
+		DABD24F3267B0AC90018A3FC /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F2267B0AC90018A3FC /* TopBar.swift */; };
+		DABD24FE267B0B8E0018A3FC /* PetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F5267B0B8E0018A3FC /* PetForm.swift */; };
+		DABD24FF267B0B8E0018A3FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F6267B0B8E0018A3FC /* Pet.swift */; };
+		DABD2500267B0B8E0018A3FC /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F8267B0B8E0018A3FC /* PetViewModel.swift */; };
+		DABD2501267B0B8E0018A3FC /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F9267B0B8E0018A3FC /* PetListViewModel.swift */; };
+		DABD2502267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24FB267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift */; };
+		DABD2503267B0B8E0018A3FC /* PetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24FD267B0B8E0018A3FC /* PetRepository.swift */; };
+		DABD2508267B0BFD0018A3FC /* FirebaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD2506267B0BFD0018A3FC /* FirebaseUIView.swift */; };
+		DABD2509267B0BFD0018A3FC /* CustomLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD2507267B0BFD0018A3FC /* CustomLoginView.swift */; };
+		DABD250B267B0D0B0018A3FC /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250A267B0D0B0018A3FC /* PetCard.swift */; };
+		DABD250D267B10650018A3FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD250C267B10650018A3FC /* GoogleService-Info.plist */; };
+		DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		368277DC047393F694982E8A /* Pods-CalmPets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalmPets.release.xcconfig"; path = "Target Support Files/Pods-CalmPets/Pods-CalmPets.release.xcconfig"; sourceTree = "<group>"; };
 		8A83A0C51B42A0ABD46AAABA /* Pods_CalmPets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CalmPets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D27DECBCBC3E7000122E1488 /* Pods-CalmPets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CalmPets.debug.xcconfig"; path = "Target Support Files/Pods-CalmPets/Pods-CalmPets.debug.xcconfig"; sourceTree = "<group>"; };
+		DA53B261267C2374001D8123 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA53B263267C6F85001D8123 /* PetFormView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetFormView.swift; sourceTree = "<group>"; };
+		DA53B265267C6FA3001D8123 /* AnimalsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsEnum.swift; sourceTree = "<group>"; };
+		DA53B267267C6FFE001D8123 /* CustomPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
+		DA53B268267C6FFE001D8123 /* CustomTextEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextEditorView.swift; sourceTree = "<group>"; };
 		DABD24CD267ADA890018A3FC /* CalmPets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalmPets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD24D0267ADA890018A3FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DABD24D2267ADA890018A3FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +54,22 @@
 		DABD24D9267ADA8A0018A3FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DABD24DC267ADA8A0018A3FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DABD24DE267ADA8B0018A3FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DABD24E7267ADD330018A3FC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DABD24EB267AE6090018A3FC /* GeneralPetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPetsView.swift; sourceTree = "<group>"; };
+		DABD24ED267AE6200018A3FC /* UserPetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPetsView.swift; sourceTree = "<group>"; };
+		DABD24F0267B09330018A3FC /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
+		DABD24F2267B0AC90018A3FC /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
+		DABD24F5267B0B8E0018A3FC /* PetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetForm.swift; sourceTree = "<group>"; };
+		DABD24F6267B0B8E0018A3FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		DABD24F8267B0B8E0018A3FC /* PetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		DABD24F9267B0B8E0018A3FC /* PetListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
+		DABD24FB267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreCollectionsEnum.swift; sourceTree = "<group>"; };
+		DABD24FD267B0B8E0018A3FC /* PetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetRepository.swift; sourceTree = "<group>"; };
+		DABD2506267B0BFD0018A3FC /* FirebaseUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseUIView.swift; sourceTree = "<group>"; };
+		DABD2507267B0BFD0018A3FC /* CustomLoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginView.swift; sourceTree = "<group>"; };
+		DABD250A267B0D0B0018A3FC /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
+		DABD250C267B10650018A3FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +98,6 @@
 				D27DECBCBC3E7000122E1488 /* Pods-CalmPets.debug.xcconfig */,
 				368277DC047393F694982E8A /* Pods-CalmPets.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,13 +122,19 @@
 		DABD24CF267ADA890018A3FC /* CalmPets */ = {
 			isa = PBXGroup;
 			children = (
-				DABD24D0267ADA890018A3FC /* AppDelegate.swift */,
-				DABD24D2267ADA890018A3FC /* SceneDelegate.swift */,
-				DABD24D4267ADA890018A3FC /* ContentView.swift */,
 				DABD24D6267ADA8A0018A3FC /* Assets.xcassets */,
-				DABD24DB267ADA8A0018A3FC /* LaunchScreen.storyboard */,
+				DABD24D4267ADA890018A3FC /* ContentView.swift */,
+				DABD24E4267ADCEA0018A3FC /* Delegates */,
+				DABD24FA267B0B8E0018A3FC /* Enums */,
+				DABD2505267B0BFD0018A3FC /* Firebase */,
 				DABD24DE267ADA8B0018A3FC /* Info.plist */,
+				DABD250C267B10650018A3FC /* GoogleService-Info.plist */,
+				DABD24DB267ADA8A0018A3FC /* LaunchScreen.storyboard */,
+				DABD24F4267B0B8E0018A3FC /* Models */,
 				DABD24D8267ADA8A0018A3FC /* Preview Content */,
+				DABD24FC267B0B8E0018A3FC /* Repositories */,
+				DABD24F7267B0B8E0018A3FC /* ViewModels */,
+				DABD24E6267ADD290018A3FC /* Views */,
 			);
 			path = CalmPets;
 			sourceTree = "<group>";
@@ -98,6 +145,94 @@
 				DABD24D9267ADA8A0018A3FC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DABD24E4267ADCEA0018A3FC /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24D0267ADA890018A3FC /* AppDelegate.swift */,
+				DABD24D2267ADA890018A3FC /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		DABD24E6267ADD290018A3FC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24EF267B09240018A3FC /* Components */,
+				DABD2504267B0BAC0018A3FC /* Navigation */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DABD24EF267B09240018A3FC /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DA53B267267C6FFE001D8123 /* CustomPickerView.swift */,
+				DA53B268267C6FFE001D8123 /* CustomTextEditorView.swift */,
+				DABD24F0267B09330018A3FC /* TabBarButton.swift */,
+				DABD24F2267B0AC90018A3FC /* TopBar.swift */,
+				DABD250A267B0D0B0018A3FC /* PetCard.swift */,
+				DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		DABD24F4267B0B8E0018A3FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24F5267B0B8E0018A3FC /* PetForm.swift */,
+				DABD24F6267B0B8E0018A3FC /* Pet.swift */,
+			);
+			name = Models;
+			path = ../../Calm/Calm/Models;
+			sourceTree = "<group>";
+		};
+		DABD24F7267B0B8E0018A3FC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24F8267B0B8E0018A3FC /* PetViewModel.swift */,
+				DABD24F9267B0B8E0018A3FC /* PetListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DABD24FA267B0B8E0018A3FC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24FB267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift */,
+				DA53B265267C6FA3001D8123 /* AnimalsEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		DABD24FC267B0B8E0018A3FC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24FD267B0B8E0018A3FC /* PetRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DABD2504267B0BAC0018A3FC /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				DA53B263267C6F85001D8123 /* PetFormView.swift */,
+				DABD24E7267ADD330018A3FC /* HomeView.swift */,
+				DABD24EB267AE6090018A3FC /* GeneralPetsView.swift */,
+				DABD24ED267AE6200018A3FC /* UserPetsView.swift */,
+				DA53B261267C2374001D8123 /* MainView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		DABD2505267B0BFD0018A3FC /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				DABD2506267B0BFD0018A3FC /* FirebaseUIView.swift */,
+				DABD2507267B0BFD0018A3FC /* CustomLoginView.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABD24DD267ADA8A0018A3FC /* LaunchScreen.storyboard in Resources */,
+				DABD250D267B10650018A3FC /* GoogleService-Info.plist in Resources */,
 				DABD24DA267ADA8A0018A3FC /* Preview Assets.xcassets in Resources */,
 				DABD24D7267ADA8A0018A3FC /* Assets.xcassets in Resources */,
 			);
@@ -232,9 +368,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */,
+				DABD24FE267B0B8E0018A3FC /* PetForm.swift in Sources */,
 				DABD24D1267ADA890018A3FC /* AppDelegate.swift in Sources */,
+				DABD24EC267AE6090018A3FC /* GeneralPetsView.swift in Sources */,
+				DA53B266267C6FA3001D8123 /* AnimalsEnum.swift in Sources */,
+				DABD2508267B0BFD0018A3FC /* FirebaseUIView.swift in Sources */,
+				DA53B262267C2374001D8123 /* MainView.swift in Sources */,
+				DABD24E8267ADD330018A3FC /* HomeView.swift in Sources */,
+				DABD24EE267AE6200018A3FC /* UserPetsView.swift in Sources */,
+				DA53B264267C6F85001D8123 /* PetFormView.swift in Sources */,
+				DABD24FF267B0B8E0018A3FC /* Pet.swift in Sources */,
+				DABD250B267B0D0B0018A3FC /* PetCard.swift in Sources */,
+				DABD24F1267B09330018A3FC /* TabBarButton.swift in Sources */,
+				DABD2500267B0B8E0018A3FC /* PetViewModel.swift in Sources */,
+				DA53B26A267C6FFE001D8123 /* CustomTextEditorView.swift in Sources */,
 				DABD24D3267ADA890018A3FC /* SceneDelegate.swift in Sources */,
+				DABD2503267B0B8E0018A3FC /* PetRepository.swift in Sources */,
 				DABD24D5267ADA890018A3FC /* ContentView.swift in Sources */,
+				DABD2502267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift in Sources */,
+				DABD2501267B0B8E0018A3FC /* PetListViewModel.swift in Sources */,
+				DABD24F3267B0AC90018A3FC /* TopBar.swift in Sources */,
+				DABD2509267B0BFD0018A3FC /* CustomLoginView.swift in Sources */,
+				DA53B269267C6FFE001D8123 /* CustomPickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,7 +542,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.soyaaroncervantes.CalmPets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -408,7 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.soyaaroncervantes.CalmPets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
