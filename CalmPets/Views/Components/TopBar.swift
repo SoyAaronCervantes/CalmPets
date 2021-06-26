@@ -21,7 +21,7 @@ struct TopBar: View {
                     .foregroundColor(.primary)
             })
         }
-        .padding()
+        .padding(.horizontal)
         .overlay(
             Text(title)
                 .font(.title2)

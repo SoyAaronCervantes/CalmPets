@@ -12,11 +12,13 @@ import Firebase
 struct PetFormView: View {
     @Binding var offset: CGFloat
     private let store = Firestore.firestore()
-    
+
     var body: some View {
         VStack {
             HStack(spacing: 15) {
-                Button(action: { offset = 0 }, label: {
+                Button(action: {
+                    offset = CGFloat(0)
+                }, label: {
                     HStack {
                         Image(systemName: "chevron.left")
                             .font(.system(size: 24, weight: .bold))
