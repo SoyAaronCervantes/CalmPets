@@ -35,6 +35,8 @@
 		DABD250B267B0D0B0018A3FC /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250A267B0D0B0018A3FC /* PetCard.swift */; };
 		DABD250D267B10650018A3FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD250C267B10650018A3FC /* GoogleService-Info.plist */; };
 		DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */; };
+		DAFABD952686B64400339010 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABD942686B64400339010 /* CameraView.swift */; };
+		DAFABD972686B79900339010 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABD962686B79900339010 /* CameraModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		DABD250A267B0D0B0018A3FC /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
 		DABD250C267B10650018A3FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
+		DAFABD942686B64400339010 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		DAFABD962686B79900339010 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			children = (
 				DABD24F5267B0B8E0018A3FC /* PetForm.swift */,
 				DABD24F6267B0B8E0018A3FC /* Pet.swift */,
+				DAFABD962686B79900339010 /* CameraModel.swift */,
 			);
 			name = Models;
 			path = ../../Calm/Calm/Models;
@@ -222,6 +227,7 @@
 				DABD24EB267AE6090018A3FC /* GeneralPetsView.swift */,
 				DABD24ED267AE6200018A3FC /* UserPetsView.swift */,
 				DA53B261267C2374001D8123 /* MainView.swift */,
+				DAFABD942686B64400339010 /* CameraView.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -370,6 +376,7 @@
 			files = (
 				DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */,
 				DABD24FE267B0B8E0018A3FC /* PetForm.swift in Sources */,
+				DAFABD972686B79900339010 /* CameraModel.swift in Sources */,
 				DABD24D1267ADA890018A3FC /* AppDelegate.swift in Sources */,
 				DABD24EC267AE6090018A3FC /* GeneralPetsView.swift in Sources */,
 				DA53B266267C6FA3001D8123 /* AnimalsEnum.swift in Sources */,
@@ -383,6 +390,7 @@
 				DABD24F1267B09330018A3FC /* TabBarButton.swift in Sources */,
 				DABD2500267B0B8E0018A3FC /* PetViewModel.swift in Sources */,
 				DA53B26A267C6FFE001D8123 /* CustomTextEditorView.swift in Sources */,
+				DAFABD952686B64400339010 /* CameraView.swift in Sources */,
 				DABD24D3267ADA890018A3FC /* SceneDelegate.swift in Sources */,
 				DABD2503267B0B8E0018A3FC /* PetRepository.swift in Sources */,
 				DABD24D5267ADA890018A3FC /* ContentView.swift in Sources */,

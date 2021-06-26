@@ -15,9 +15,10 @@ struct MainView: View {
 
             let frame = reader.frame( in: .global)
 
-            ScrollableTabBar(tabs: ["", ""], rect: frame, offset: $offset) {
+            ScrollableTabBar(tabs: ["", "", ""], rect: frame, offset: $offset) {
                 HomeView(offset: $offset)
                 PetFormView(offset: $offset)
+                CameraView()
             }
             .ignoresSafeArea()
         }
