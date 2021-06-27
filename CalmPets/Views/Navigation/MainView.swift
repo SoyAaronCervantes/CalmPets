@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State var offset: CGFloat = 0
+    @State var pet = PetModel()
 
     var body: some View {
         GeometryReader { reader in
@@ -17,8 +18,8 @@ struct MainView: View {
 
             ScrollableTabBar(tabs: ["", "", ""], rect: frame, offset: $offset) {
                 HomeView(offset: $offset)
-                PetFormView(offset: $offset)
-                CameraView()
+                PetFormView(offset: $offset, pet: $pet)
+                CameraView( pet: $pet )
             }
             .ignoresSafeArea()
         }

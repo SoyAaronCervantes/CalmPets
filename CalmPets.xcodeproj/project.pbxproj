@@ -24,8 +24,7 @@
 		DABD24EE267AE6200018A3FC /* UserPetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24ED267AE6200018A3FC /* UserPetsView.swift */; };
 		DABD24F1267B09330018A3FC /* TabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F0267B09330018A3FC /* TabBarButton.swift */; };
 		DABD24F3267B0AC90018A3FC /* TopBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F2267B0AC90018A3FC /* TopBar.swift */; };
-		DABD24FE267B0B8E0018A3FC /* PetForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F5267B0B8E0018A3FC /* PetForm.swift */; };
-		DABD24FF267B0B8E0018A3FC /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F6267B0B8E0018A3FC /* Pet.swift */; };
+		DABD24FE267B0B8E0018A3FC /* PetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F5267B0B8E0018A3FC /* PetModel.swift */; };
 		DABD2500267B0B8E0018A3FC /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F8267B0B8E0018A3FC /* PetViewModel.swift */; };
 		DABD2501267B0B8E0018A3FC /* PetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24F9267B0B8E0018A3FC /* PetListViewModel.swift */; };
 		DABD2502267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD24FB267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift */; };
@@ -35,6 +34,7 @@
 		DABD250B267B0D0B0018A3FC /* PetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250A267B0D0B0018A3FC /* PetCard.swift */; };
 		DABD250D267B10650018A3FC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DABD250C267B10650018A3FC /* GoogleService-Info.plist */; };
 		DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */; };
+		DAF531A52688563A008E3D6D /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF531A42688563A008E3D6D /* Pet.swift */; };
 		DAFABD952686B64400339010 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABD942686B64400339010 /* CameraView.swift */; };
 		DAFABD972686B79900339010 /* CameraModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFABD962686B79900339010 /* CameraModel.swift */; };
 /* End PBXBuildFile section */
@@ -61,8 +61,7 @@
 		DABD24ED267AE6200018A3FC /* UserPetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPetsView.swift; sourceTree = "<group>"; };
 		DABD24F0267B09330018A3FC /* TabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButton.swift; sourceTree = "<group>"; };
 		DABD24F2267B0AC90018A3FC /* TopBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBar.swift; sourceTree = "<group>"; };
-		DABD24F5267B0B8E0018A3FC /* PetForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetForm.swift; sourceTree = "<group>"; };
-		DABD24F6267B0B8E0018A3FC /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		DABD24F5267B0B8E0018A3FC /* PetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetModel.swift; sourceTree = "<group>"; };
 		DABD24F8267B0B8E0018A3FC /* PetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
 		DABD24F9267B0B8E0018A3FC /* PetListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetListViewModel.swift; sourceTree = "<group>"; };
 		DABD24FB267B0B8E0018A3FC /* FirestoreCollectionsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirestoreCollectionsEnum.swift; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		DABD250A267B0D0B0018A3FC /* PetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCard.swift; sourceTree = "<group>"; };
 		DABD250C267B10650018A3FC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableTabBar.swift; sourceTree = "<group>"; };
+		DAF531A42688563A008E3D6D /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		DAFABD942686B64400339010 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		DAFABD962686B79900339010 /* CameraModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -185,8 +185,8 @@
 		DABD24F4267B0B8E0018A3FC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DABD24F5267B0B8E0018A3FC /* PetForm.swift */,
-				DABD24F6267B0B8E0018A3FC /* Pet.swift */,
+				DAF531A42688563A008E3D6D /* Pet.swift */,
+				DABD24F5267B0B8E0018A3FC /* PetModel.swift */,
 				DAFABD962686B79900339010 /* CameraModel.swift */,
 			);
 			name = Models;
@@ -375,7 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DABD250F267B918F0018A3FC /* ScrollableTabBar.swift in Sources */,
-				DABD24FE267B0B8E0018A3FC /* PetForm.swift in Sources */,
+				DABD24FE267B0B8E0018A3FC /* PetModel.swift in Sources */,
 				DAFABD972686B79900339010 /* CameraModel.swift in Sources */,
 				DABD24D1267ADA890018A3FC /* AppDelegate.swift in Sources */,
 				DABD24EC267AE6090018A3FC /* GeneralPetsView.swift in Sources */,
@@ -384,8 +384,8 @@
 				DA53B262267C2374001D8123 /* MainView.swift in Sources */,
 				DABD24E8267ADD330018A3FC /* HomeView.swift in Sources */,
 				DABD24EE267AE6200018A3FC /* UserPetsView.swift in Sources */,
+				DAF531A52688563A008E3D6D /* Pet.swift in Sources */,
 				DA53B264267C6F85001D8123 /* PetFormView.swift in Sources */,
-				DABD24FF267B0B8E0018A3FC /* Pet.swift in Sources */,
 				DABD250B267B0D0B0018A3FC /* PetCard.swift in Sources */,
 				DABD24F1267B09330018A3FC /* TabBarButton.swift in Sources */,
 				DABD2500267B0B8E0018A3FC /* PetViewModel.swift in Sources */,

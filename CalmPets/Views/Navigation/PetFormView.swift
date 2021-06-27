@@ -11,6 +11,8 @@ import Firebase
 
 struct PetFormView: View {
     @Binding var offset: CGFloat
+    @Binding var pet: PetModel
+    
     private let store = Firestore.firestore()
 
     var body: some View {
