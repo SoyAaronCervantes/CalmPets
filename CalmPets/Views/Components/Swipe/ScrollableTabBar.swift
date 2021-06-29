@@ -50,7 +50,16 @@ struct ScrollableTabBar<Content: View>: UIViewRepresentable {
     }
     
     func updateUIView(_ uiView: UIScrollView, context: Context) {
-
+        if uiView.contentOffset.x != offset {
+            uiView.delegate = nil
+            UIView.animate(withDuration: 0.4) {
+                uiView.contentOffset.x = offset
+            } completion: { (status) in
+                if status {
+                    uiView.delegate = context.coordinator
+                }
+            }
+        }
     }
     
     // Setting Up ScrollView
@@ -64,9 +73,7 @@ struct ScrollableTabBar<Content: View>: UIViewRepresentable {
     
     func extractView() -> UIView {
         // It depends on tabs, we need to get tabs also on this struct
-        let controller = UIHostingController(rootView: HStack(spacing: 0) {
-            content
-        }.ignoresSafeArea() )
+        let controller = UIHostingController(rootView: HStack(spacing: 0) { content }.ignoresSafeArea() )
         controller.view.frame = CGRect(x: 0, y: 0, width: rect.width * CGFloat(tabs.count), height: rect.height)
         return controller.view!
     }

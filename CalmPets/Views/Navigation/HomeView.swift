@@ -22,11 +22,13 @@ struct HomeView: View {
                 .padding(.top, 15)
                 .tag("house.fill")
 
-            UserPetsView( offset: $offset, petList: PetListViewModel( uid: user?.uid ?? ""  ) )
+            UserPetsView( offset: $offset, petList: PetListViewModel( uid: user?.uid ?? "" ) )
                 .padding(.top, 15)
                 .tag("heart.fill")
+
         }
         .overlay(
+
             VStack(spacing: 12) {
                 Divider()
                     .padding(.horizontal, -15)
