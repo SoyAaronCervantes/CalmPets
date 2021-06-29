@@ -18,7 +18,7 @@ struct TopBar: View {
             }, label: {
                 Image(systemName: "plus.app")
                     .font(.title)
-                    .foregroundColor(.primary)
+                    .foregroundColor( Color("secondaryColor") )
             })
         }
         .padding(.horizontal)

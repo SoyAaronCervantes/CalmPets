@@ -103,6 +103,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		DA72890A2688F9510096BB64 /* Swipe */ = {
+			isa = PBXGroup;
+			children = (
+				DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */,
+			);
+			path = Swipe;
+			sourceTree = "<group>";
+		};
+		DA72890C2688F96D0096BB64 /* Pet List Components */ = {
+			isa = PBXGroup;
+			children = (
+				DABD24F0267B09330018A3FC /* TabBarButton.swift */,
+				DABD24F2267B0AC90018A3FC /* TopBar.swift */,
+			);
+			path = "Pet List Components";
+			sourceTree = "<group>";
+		};
 		DABD24C4267ADA890018A3FC = {
 			isa = PBXGroup;
 			children = (
@@ -170,10 +187,9 @@
 		DABD24EF267B09240018A3FC /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				DABD24F0267B09330018A3FC /* TabBarButton.swift */,
-				DABD24F2267B0AC90018A3FC /* TopBar.swift */,
+				DA72890C2688F96D0096BB64 /* Pet List Components */,
+				DA72890A2688F9510096BB64 /* Swipe */,
 				DABD250A267B0D0B0018A3FC /* PetCard.swift */,
-				DABD250E267B918E0018A3FC /* ScrollableTabBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";

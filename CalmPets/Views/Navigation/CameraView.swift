@@ -9,8 +9,10 @@ import SwiftUI
 import AVFoundation
 
 struct CameraView: View {
+    @Binding var offset: CGFloat
     @Binding var pet: PetModel
-    @StateObject var camera = CameraModel()
+    @ObservedObject var petViewModel: PetListViewModel
+    @ObservedObject var camera: CameraModel
     
     var body: some View {
         ZStack {
@@ -67,19 +69,17 @@ struct CameraView: View {
         .onAppear {
             camera.check()
         }
+        
     }
     
     private func takePhoto() {
-
+        
         if !camera.isSaved{
             camera.savePhoto( petID: self.pet.id )
-
-            self.pet = PetModel()
-            pet.setup()
         }
-
+        
     }
-
+    
 }
 
 
